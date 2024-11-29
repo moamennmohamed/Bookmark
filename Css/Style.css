@@ -1,0 +1,143 @@
+body {
+  background-color: #f7ecde;
+}
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "PT Sans Caption", serif;
+  color: rgb(33, 37, 41);
+}
+h1 {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  font-family: "Pacifico", serif;
+  font-size: 3.125rem;
+  font-weight: 500;
+}
+
+h1::after {
+  position: absolute;
+  content: "";
+  height: 1.25rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fec260;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.main-section {
+  border-top: black dotted 3px;
+  border-bottom: black dotted 3px;
+}
+
+h1:hover::after {
+  height: 2.5rem;
+}
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #6aa84f;
+  background: linear-gradient(to right, #6aa84f, #b2ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Righteous", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+button.btn-sbbmit {
+  border: 0;
+  background-color: #d1512d;
+  width: 9.375rem;
+  height: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+button.btn-sbbmit:hover {
+  background-color: #bb4120;
+}
+
+a.btn-visit {
+  border: 0;
+  background-color: #9eb23b;
+  /* padding-block: 10px; */
+  /* padding-inline: 20px; */
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.btn-visit:hover {
+  background-color: #8a9e23;
+}
+
+.btn-delete {
+  border: 0;
+  background-color: #eb1d36;
+  width: 5.625rem;
+  border-radius: 3px;
+  height: 2.375rem;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-delete:hover {
+  background-color: #d30820;
+}
+thead {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "PT Sans Caption", serif;
+  color: rgb(33, 37, 41);
+}
+
+.popap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 999;
+}
+.content-section-popap {
+  width: 31.25rem;
+  margin-top: 40%;
+}
+
+.popap h4 {
+  font-size: 1.3125rem;
+  font-family: 400;
+  color: rgb(53, 46, 40);
+  font-family: "Bree Serif", serif;
+}
+
+.icon-popap {
+  color: rgb(187, 65, 32);
+}
+
+.popap-error h5{
+  color: rgb(33, 37, 41);
+  font-family: "PT Sans Caption", serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+#closePopap{
+  cursor: pointer;
+}
